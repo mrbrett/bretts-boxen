@@ -1,3 +1,4 @@
+# encoding: utf-8
 # This file manages Puppet module dependencies.
 #
 # It works a lot like Bundler. We provide some core modules by
