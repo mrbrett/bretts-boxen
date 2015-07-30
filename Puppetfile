@@ -5,21 +5,21 @@
 # environment.
 
 # Shortcut for a module from GitHub's boxen organization
-def github(name, *args)
-  options ||= if args.last.is_a? Hash
-    args.last
-  else
-    {}
-  end
-
-  if path = options.delete(:path)
-    mod name, :path => path
-  else
-    version = args.first
-    options[:repo] ||= "boxen/puppet-#{name}"
-    mod name, version, :github_tarball => options[:repo]
-  end
-end
+# def github(name, *args)
+#   options ||= if args.last.is_a? Hash
+#     args.last
+#   else
+#     {}
+#   end
+# 
+#   if path = options.delete(:path)
+#     mod name, :path => path
+#   else
+#     version = args.first
+#     options[:repo] ||= "boxen/puppet-#{name}"
+#     mod name, version, :github_tarball => options[:repo]
+#   end
+# end
 
 # Shortcut for a module under development
 def dev(name, *args)
@@ -58,7 +58,7 @@ github "stdlib",      "4.2.1", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",        "1.0.0"
 github "xquartz",     "1.2.1"
 github "postgresql",  "3.0.3"
-# github "redis",       "3.1.0"
+github "redis",       "3.1.0"
 github "grunt",       "0.4.5", :repo => "gruntjs/grunt"
 
 # Optional/custom modules. There are tons available at
