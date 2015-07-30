@@ -58,7 +58,7 @@ github "stdlib",      "4.2.1", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",        "1.0.0"
 github "xquartz",     "1.2.1"
 github "postgresql",  "3.0.3"
-github "redis",       "3.1.0"
+# github "redis",       "3.1.0"
 github "grunt",       "0.4.5", :repo => "gruntjs/grunt"
 
 # Optional/custom modules. There are tons available at
